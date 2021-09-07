@@ -1,0 +1,37 @@
+.userListEdit{
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 15px;
+}
+ 
+.userListProjects{
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #21302F;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#userListDelete{
+    cursor: pointer;
+    color: red;
+} 
+
+.userAddBtn{
+    background-color: #21302F;
+    margin: 20px 20px;
+    color: #fff;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
