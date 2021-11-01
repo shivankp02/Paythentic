@@ -1,14 +1,13 @@
-import Topbar from "./components/topbar/Topbar";
+import Topbar   from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./Pages/Home/Home";
+import FeaturedInfo from "./components/FeaturedInfo/FeaturedInfo";
 import "./App.css";
 import React from "react";
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Userlist from "./Pages/UserList/Userlist";
-import User from "./Pages/Edituser/editUser";
-import NewUser from "./Pages/newUser/NewUser";
+import Report from "./Pages/Report/report";
 import Project from "./Pages/projects/Project";
-
+import Payment from "./Pages/Payment/Payment";
 
 function App() {
   return (
@@ -19,7 +18,12 @@ function App() {
         <div className="home">
           <Switch>
             <Route exact path="/">
-              <Home/>
+              <FeaturedInfo/>
+              <Userlist/>
+            </Route>
+
+            <Route path="/Project">
+              <Project/>
             </Route>
 
             <Route path="/Users">
@@ -27,15 +31,19 @@ function App() {
             </Route>
             
             <Route path="/User/:userId">
-              <User/>
+              <Report/>
             </Route>
             
             <Route path="/Project/:userId">
-              <Project />
+              <Project/>
             </Route>
             
-            <Route path="/newUser">
-              <NewUser /> 
+            <Route path="/Report">
+              <Report/> 
+            </Route>
+
+            <Route path="/Payment">
+              <Payment/>
             </Route>
 
           </Switch>

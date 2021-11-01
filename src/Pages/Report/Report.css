@@ -1,4 +1,4 @@
-.project {
+.report {
     flex:2;
     margin: 50px;
     padding: 20px;
@@ -7,17 +7,17 @@
     box-shadow: 0px 0px 11px 1px #21302F;
 }
 
-.projectTitle {
+.reportTitle {
     font-size: 30px; 
     font-weight: 600;
 } 
 
-.projectTable{
+.reportTable{
     width: 100%;
     border-spacing: 20px;
 }
 
-.projectTh{
+.reportTh{
     text-align: left;
     font-size: 20px;
 }

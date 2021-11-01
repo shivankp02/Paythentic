@@ -1,20 +1,19 @@
 .featured{
-    width: 90%;
     margin-top: 50px;
-    margin: 10% 10%;
     display: flex;
     justify-content: space-evenly;
 }
-
+ 
 .btn{
     border: none;
+    font-size:20px;
     border-radius: 10px;
-    width: 180px;
-    height: 200px;
-    background-color: #3bb077;
+    width: 20rem;
+    height: 5rem;
+    background-color: #fff;
     color: rgb(2, 2, 2);
     cursor: pointer;
-    margin-right: 15px;
+    
     -webkit-box-shadow: 0px 0px 11px 1px #21302F; 
     box-shadow: 0px 0px 11px 1px #21302F;
 }
@@ -23,14 +22,4 @@
     list-style: none;
     color: black;
     text-decoration: none;
-}
-
-.featuredTitle{
-
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    
-    
-    
 }

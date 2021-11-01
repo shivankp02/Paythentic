@@ -1,30 +1,35 @@
 .topbar{
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  width: 100%;
+  height: 60px;
+  background-color: #21302F;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .topRight{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .topbarWrapper{
-    height: 100%;
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
-    font-weight: bold;
-    font-size: 39px;
-    color: #13b9ae;
+  font-weight: bold;
+  font-size: 39px;
+  color: #fff;
 }
 
 .topbarIconContainer{
-    cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+}
+
+#dropdown-basic-button{
+  size: 10px;
 }

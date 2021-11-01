@@ -1,71 +1,50 @@
 import './userList.css';
-import { DataGrid } from '@material-ui/data-grid';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { userRows } from '../../dummyData';
 
 export default function Userlist() {
-  const [data,setData] = useState(userRows)
-
-  const handleDelete = (id) =>{
-    setData(data.filter((item) => item.id !== id));
-  }
-
-  const columns = [
-    { field: 'id', headerName: 'ID', width: 90 },
-    { field: 'User',headerName: 'User', width: 140 },
-    { field: 'email',headerName: 'Email', width: 180},
-    {
-      field: 'status',
-      headerName: 'Status',
-      width: 115, 
-    },
-    {
-      field: 'project',
-      headerName: 'Projects',
-      width: 130,
-      renderCell: (params) =>{
-        return(
-          <>
-            <Link to={"/Project/" + params.row.id}>
-              <button className="userListProjects">Projects</button>
-            </Link>
-          </>
-        )
-      }
-    },
-    {
-      field: 'transaction',
-      headerName: 'Transaction',
-      width: 150,
-    },
-    {
-      field: 'actions',
-      headerName: 'Active',
-      width: 150,
-      renderCell: (params) =>{
-        return(
-          <>
-            <Link to={"/User/" + params.row.id}>
-              <button className="userListEdit">Edit</button>
-            </Link>
-            <i class="fas fa-trash" id="userListDelete" onClick={() => handleDelete(params.row.id)}></i>
-          </>
-        )
-      }
-    },
-
-  ];
-
+  const userDetail=[{
+    userId:"101",
+    userName:"Shivank",
+    usertype:"Freelancer",
+    status:"Active",
+  },
+  {
+    userId:"102",
+    userName:"Amit",
+    usertype:"Employer",
+    status:"Blocked",
+  },
+  {
+    userId:"103",
+    userName:"Irfan",
+    usertype:"Employer",
+    status:"Ban",
+  },
+  {
+    userId:"104",
+    userName:"Sumit",
+    usertype:"Employer",
+    status:"Active",
+  }  
+]
   return (
-    <>
-      <div style={{ height: 400, width: '100%' }}>
-      <DataGrid rows={data} columns={columns} pagestatusSize={5} checkboxSelection disableSelectionOnClick />
-      </div>
-      <Link to="/newUser" exact>
-        <button className="userAddBtn">Create New User</button>
-      </Link>
-    </>
-  )
+    <div className="user"> 
+      <h3 className="userTitle">User Details</h3>
+      <table className="userTable">
+        <tr className="userTr">
+          <th className="userTh">User ID</th>
+          <th className="userTh">User Name</th>
+          <th className="userTh">Usertype</th>
+          <th className="userTh">Status</th>
+        </tr>
+        {userDetail.map(user => (
+          <tr>
+            <td>{user.userId}</td>
+            <td>{user.userName}</td>
+            <td>{user.usertype}</td>
+            <td>{user.status}</td>
+          </tr>
+        ))}
+      </table>
+    </div>
+  );
 }
- 
