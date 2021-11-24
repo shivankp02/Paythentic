@@ -1,0 +1,23 @@
+.user {
+    flex: 2;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(10, 10, 10, 0.253);
+    box-shadow: -7px 7px 7px 0px rgba(0,0,0,0.5);
+}
+
+.userTitle {
+    font-size: 30px; 
+    font-weight: 600;
+} 
+
+.userTable{
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.userTh{
+    text-align: left;
+    font-size: 20px;
+}

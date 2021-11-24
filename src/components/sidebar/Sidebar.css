@@ -1,0 +1,40 @@
+.sidebar{
+    width: 15rem;
+    height: calc(100vh - 60px);
+    background-color: #21302F;
+    position: sticky;
+    top: 50px;
+}
+ 
+.sidebarWrapper{
+    padding: 10px;
+    color: #dddddd;
+}
+
+.sidebarList{
+    list-style: none;
+    padding: 5px;
+}
+
+.sidebarListItem{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover{
+    background-color: #2c4d41;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.sidebarLink{
+    color: #dddddd;
+}
+
+@media only screen and (max-width: 580px){
+    .sidebar{
+        display:none;
+    }
+}

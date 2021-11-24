@@ -1,0 +1,24 @@
+.featured{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.btn{
+    border: none;
+    font-size:20px;
+    border-radius: 10px;
+    width: 20rem;
+    height: 5rem;
+    background-color: #fff;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+    border: 1px solid rgba(10, 10, 10, 0.253);
+    box-shadow: -7px 7px 7px 0px rgba(0,0,0,0.5);
+}
+
+.btnLink{
+    list-style: none;
+    color: black;   
+    text-decoration: none;
+}
